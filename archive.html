@@ -1,65 +1,75 @@
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-  <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
-<body>
-  <div id="holder">
-    <header>
-      <div id="title-archive"><h1>Wall:HD</h1></div>
-      <div id="container">
-
-        <div id="nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="archive.html">Archive</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </div>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Wall:HD Archive</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Wall:HD</h1>
+    </div>
+    <div class="row">
+      <div class="col-2 menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="archive.html">Archive</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
       </div>
-    </header>
-    <div id="body">
-      <div id="content-archive">
-        <img src="1.jpg" alt="a field covered in beautiful sunset"></img>
-        <img src="2.jpg" alt="People shaking hands in a workspace enviroment"></img>
-        <img src="3.jpg" alt="parents walking with their child,holding hands"></img>
-        <img src="4.jpg" alt="forest path"></img>
-        <img src="5.jpg" alt="Autumn Leaves with background blur"></img>
-        <img src="6.jpg" alt="an old,broken down cottage in a field"></img>
-        <img src="7.jpg" alt="a small boat on a lake beach"></img>
-        <img src="8.jpg" alt="a light-gray wolf"></img>
-        <img src="9.jpg" alt="a lighthouse on the shore"></img>
-        <img src="10.jpg" alt="gray stone wall"></img>
-
+    </div>
+    <div class="row">
+      <div class="col-2 spacer"></div>
+      <div class="col-8 content">
+        <p>Archive</p>
       </div>
-      <button  id="myBtn" title="Go to top">Top</button>
-      <script>
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
+      <div class="col-2 side">
+        <img src="ad.png" alt="ad spot"></img>
+      </div>
+    </div>
+    <div class="row">
+    <div class="col-12 content">
 
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById("myBtn").style.display = "block";
-        } else {
-          document.getElementById("myBtn").style.display = "none";
-        }
+      <img src="1.jpg" alt="a field covered in beautiful sunset"></img>
+      <img src="2.jpg" alt="People shaking hands in a workspace enviroment"></img>
+      <img src="3.jpg" alt="parents walking with their child,holding hands"></img>
+      <img src="4.jpg" alt="forest path"></img>
+      <img src="5.jpg" alt="Autumn Leaves with background blur"></img>
+      <img src="6.jpg" alt="an old,broken down cottage in a field"></img>
+      <img src="7.jpg" alt="a small boat on a lake beach"></img>
+      <img src="8.jpg" alt="a light-gray wolf"></img>
+      <img src="9.jpg" alt="a lighthouse on the shore"></img>
+      <img src="10.jpg" alt="gray stone wall"></img>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-12 footer">
+        <p>&copy Andrej Daskalov</p>
+      </div>
+    </div>
+    <button  id="myBtn" title="Go to top">Top</button>
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
       }
-    </script>
-    <script>// When the user clicks on the button, scroll to the top of the document
-    $('#myBtn').click(function(){
-      $('body,html').animate({
-        scrollTop: 0
-      }, 2000);
-    });
+    }
+  </script>
+  <script>// When the user clicks on the button, scroll to the top of the document
+  $('#myBtn').click(function(){
+    $('body,html').animate({
+      scrollTop: 0
+    }, 2000);
+  });
 
   </script>
-</div>
-<footer>
-  <p>&copy Andrej Daskalov</p>
-</footer>
-</div>
-</body>
-
+  </body>
 </html>
